@@ -42,8 +42,9 @@ $font_colour: #fff;
 }
   .input {
     height: 20vh;
-    font-size: 40px;
+    font-size: 70px;
     background-color: $background;
+    color: $font_colour;
   }
   .button {
     color: $font_colour;

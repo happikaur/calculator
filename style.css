@@ -25,8 +25,9 @@
 }
 .calculator .input {
   height: 20vh;
-  font-size: 40px;
+  font-size: 70px;
   background-color: #1b1919;
+  color: #fff;
 }
 .calculator .button {
   color: #fff;
