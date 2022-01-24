@@ -1,0 +1,64 @@
+// Variable
+
+$background: rgb(27, 25, 25);
+$dark-grey: rgb(78, 75, 75);
+$light-grey: rgb(138, 134, 134);
+$orange: rgb(241, 150, 65);
+$font_colour: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  font-family: 'helvetica', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: $background;
+  display: grid;
+  grid-template-areas: 
+  "a a a a"
+  "b c d e"
+  "f g h i"
+  "j k l m"
+  "n o p q"
+  "r r s t";
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.q {
+  grid-area: q;
+}
+
+.r {
+  grid-area: r;
+}
+  .input {
+    height: 20vh;
+    font-size: 40px;
+    background-color: $background;
+  }
+  .button {
+    color: $font_colour;
+    font-size: 30px;
+    border-radius: 100%;
+    text-align: center;
+  }
+  .dark-grey { 
+    background-color: $dark-grey;
+  }
+  .light-grey {
+    background-color: $light-grey;
+  }
+  .orange {
+    background-color: $orange;
+  }
+  
+}
