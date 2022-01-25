@@ -9,9 +9,11 @@ $font_colour: #fff;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .calculator {
+  margin: 0 auto;
   font-family: 'helvetica', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   height: 100vh;
@@ -29,7 +31,7 @@ $font_colour: #fff;
   grid-area: a;
 }
 
-.c {
+.clear {
   grid-area: b;
 }
 
