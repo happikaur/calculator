@@ -15,12 +15,12 @@ numbers.forEach((button) => {
     event.preventDefault();
     console.log(event.target.innerHTML)
     // Show the input
-    input.innerHTML += event.target.innerHTML;
+    input.innerHTML = input.innerHTML + event.target.innerHTML;
 
     // if the operator/button is clicked, 
     // second number appends to itself
     if (firstNumber && operator) {
-      secondNumber += event.target.innerHTML;
+      secondNumber = secondNumber + event.target.innerHTML;
     }
   });
 });
@@ -33,15 +33,15 @@ operators.forEach((symbol) => {
     firstNumber = input.innerHTML;
     operator = event.target.innerHTML;
     // Adding the symbol to the input
-    input.innerHTML += event.target.innerHTML;
+    input.innerHTML = input.innerHTML + event.target.innerHTML;
   });
 });
 
 // When pressed "=" take the input/value (need to use querySelector)
-equal.addEventListener("click", (event) => {
-  
-
-  getTotal(firstNumber, operator, secondNumber);
+equal.addEventListener("click", () => {
+  total = getTotal(firstNumber, operator, secondNumber);
+  input.innerHTML = input.innerHTML + event.target.innerHTML
+  input.innerHTML = input.innerHTML + total;
 });
 
 // Make a function of calculation with input string
