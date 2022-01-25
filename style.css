@@ -14,13 +14,13 @@
 .calculator .a {
   grid-area: a;
 }
-.calculator .b {
+.calculator .c {
   grid-area: b;
 }
-.calculator .q {
+.calculator .plus {
   grid-area: q;
 }
-.calculator .r {
+.calculator .zero {
   grid-area: r;
 }
 .calculator .input {
