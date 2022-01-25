@@ -46,7 +46,23 @@ equal.addEventListener("click", (event) => {
 
 // Make a function of calculation with input string
 const getTotal = (firstNumber, operator, secondNumber) => {
-  
+ // Change numbers to number & symbols stays as string
+ const intFirstNum = parseInt(firstNumber);
+ const intSecondNum = parseInt(secondNumber);
+
+ // switch on symbol
+ // do the calc in javascript
+ // return the result
+ switch(operator) {
+   case '+':
+     return intFirstNum + intSecondNum;
+   case '-':
+     return intFirstNum - intSecondNum;
+   case '÷':
+     return intFirstNum / intSecondNum;
+   case 'x':
+     return intFirstNum * intSecondNum;
+ }  
 };
 
 //  Cancel function
