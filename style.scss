@@ -14,8 +14,10 @@ $font_colour: #fff;
 
 .calculator {
   margin: 0 auto;
+  padding: 10px;
   font-family: 'helvetica', Tahoma, Geneva, Verdana, sans-serif;
-  width: 500px;
+  width: 100vw;
+  max-width: 500px;
   height: 100vh;
   background: $background;
   display: grid;
