@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator {
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "helvetica", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  max-width: 500px;
+  height: 100vh;
+  background: #1b1919;
+  display: grid;
+  grid-template-areas: "a a a a" "b c d e" "f g h i" "j k l m" "n o p q" "r r s t";
+}
+.calculator .a {
+  grid-area: a;
+}
+.calculator .clear {
+  grid-area: b;
+}
+.calculator .plus {
+  grid-area: q;
+}
+.calculator .zero {
+  grid-area: r;
+}
+.calculator .input {
+  height: 20vh;
+  padding-bottom: 10px;
+  font-size: 70px;
+  background-color: #1b1919;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-x: scroll;
+}
+.calculator .input::-webkit-scrollbar {
+  height: 5px;
+}
+.calculator .input::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.calculator .input::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.calculator .button {
+  margin: 2.5px;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 100%;
+  text-align: center;
+}
+.calculator .dark-grey {
+  background-color: #4e4b4b;
+}
+.calculator .light-grey {
+  background-color: #8a8686;
+}
+.calculator .orange {
+  background-color: #f19641;
+}
