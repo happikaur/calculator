@@ -46,7 +46,14 @@ equal.addEventListener('click', (event) => {
   // operator.forEach((symOperator) => {
     // total = total + getTotal(firstNumber, symOperator, secondNumber);
   // });
-  total = getTotal(firstNumber, operator, secondNumber)
+  const totalValue = getTotal(firstNumber, operator, secondNumber);
+
+  if (isPlusMinus) {
+    total = totalValue * -1;
+  } else {
+    total = totalValue;
+  }
+
   input.innerHTML = input.innerHTML + event.target.innerHTML
   input.innerHTML = input.innerHTML + total;
 });
@@ -56,10 +63,6 @@ const getTotal = (firstNum, operator, secondNum) => {
  // Change numbers to number & symbols stays as string
  let intFirstNum = parseFloat(firstNum);
  let intSecondNum = parseFloat(secondNum);
-
- if (isPlusMinus) {
-   return 
- }
 
  // switch on symbol
  // do the calc in javascript
