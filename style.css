@@ -29,12 +29,24 @@
 }
 .calculator .input {
   height: 20vh;
+  padding-bottom: 10px;
   font-size: 70px;
   background-color: #1b1919;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  overflow-x: scroll;
+}
+.calculator .input::-webkit-scrollbar {
+  height: 5px;
+}
+.calculator .input::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.calculator .input::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 .calculator .button {
   margin: 2.5px;
