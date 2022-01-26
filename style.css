@@ -7,7 +7,7 @@
 .calculator {
   margin: 0 auto;
   font-family: "helvetica", Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
+  width: 500px;
   height: 100vh;
   background: #1b1919;
   display: grid;
@@ -30,8 +30,12 @@
   font-size: 70px;
   background-color: #1b1919;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .calculator .button {
+  margin: 2.5px;
   color: #fff;
   font-size: 30px;
   border-radius: 100%;

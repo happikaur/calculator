@@ -15,7 +15,7 @@ $font_colour: #fff;
 .calculator {
   margin: 0 auto;
   font-family: 'helvetica', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
+  width: 500px;
   height: 100vh;
   background: $background;
   display: grid;
@@ -47,8 +47,12 @@ $font_colour: #fff;
     font-size: 70px;
     background-color: $background;
     color: $font_colour;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end
   }
   .button {
+    margin: 2.5px;
     color: $font_colour;
     font-size: 30px;
     border-radius: 100%;
@@ -63,5 +67,4 @@ $font_colour: #fff;
   .orange {
     background-color: $orange;
   }
-  
 }
