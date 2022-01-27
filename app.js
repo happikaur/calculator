@@ -54,8 +54,13 @@ equal.addEventListener('click', (event) => {
     total = totalValue;
   }
 
+  firstNumber = total;
+  secondNumber = '';
+  operator = '';
+
   input.innerHTML = input.innerHTML + event.target.innerHTML
-  input.innerHTML = input.innerHTML + total;
+  input.innerHTML = total;
+
 });
 
 // Make a function of calculation with input string

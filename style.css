@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+body, html {
+  height: 100%;
+}
+
 .calculator {
   margin: 0 auto;
   padding: 10px;
   font-family: "helvetica", Tahoma, Geneva, Verdana, sans-serif;
   width: 100vw;
   max-width: 500px;
-  height: 100vh;
+  height: 100%;
   background: #1b1919;
   display: grid;
   grid-template-areas: "a a a a" "b c d e" "f g h i" "j k l m" "n o p q" "r r s t";
