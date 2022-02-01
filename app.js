@@ -8,7 +8,6 @@ const plusMinus = document.querySelector('.plus-minus');
 let firstNumber;
 let secondNumber = '';
 let operator = '';
-// let operator = [];
 let total = 0;
 let isPlusMinus = false;
 
@@ -43,28 +42,29 @@ operators.forEach((symbol) => {
 
 // When pressed '=' take the input/value (need to use querySelector)
 equal.addEventListener('click', (event) => {
-  // operator.forEach((symOperator) => {
-    // total = total + getTotal(firstNumber, symOperator, secondNumber);
-  // });
   const totalValue = getTotal(firstNumber, operator, secondNumber);
+
+  total = totalValue;
 
   if (isPlusMinus) {
     total = totalValue * -1;
-  } else {
-    total = totalValue;
+    isPlusMinus = false;
   }
 
   firstNumber = total;
   secondNumber = '';
   operator = '';
 
-  input.innerHTML = input.innerHTML + event.target.innerHTML
   input.innerHTML = total;
-
 });
 
 // Make a function of calculation with input string
 const getTotal = (firstNum, operator, secondNum) => {
+
+  if (!operator && !secondNum) {
+    return firstNum;
+  }
+
  // Change numbers to number & symbols stays as string
  let intFirstNum = parseFloat(firstNum);
  let intSecondNum = parseFloat(secondNum);
@@ -82,13 +82,7 @@ const getTotal = (firstNum, operator, secondNum) => {
     case 'x':
       return intFirstNum * intSecondNum;
     case '%': 
-    // {
-    //   if (intFirstNum && intSecondNum) {
-    //     return (intSecondNum / 100 * intFirstNum);
-    //   } else if (intFirstNum && !intSecondNum) {
         return (intFirstNum / 100);
-    //   }
-    // }  
     //  % after other operators
     case '+%':
       return intFirstNum + (intSecondNum / 100 * intFirstNum);
@@ -121,9 +115,7 @@ cancel.addEventListener('click', (event) => {
   firstNumber = '';
   secondNumber = '';
   operator = '';
-  // operator = [];
   total = 0;
   input.innerHTML = '';
   isPlusMinus = false;
 }); 
-
